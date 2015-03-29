@@ -48,6 +48,8 @@
 4. После установки добавить в header.tpl,login.tpl,users.register.tpl {LZ_FORM_X}, users.profile.tpl {LZ_TITLE},{LZ_FORM}. (X - ID группы указаной в настройках)
 5. Отредактируйте шаблоны.
  
+ВІДЕО ДО ВЕРСІЇ 1.0.3 (змінено метод виведення тегів з {LZ_FORM} на {LZ_FORM_Х}) 
+
 [![Робота розширення](http://img.youtube.com/vi/vSgSyQ31UE0/0.jpg)](https://www.youtube.com/watch?v=vSgSyQ31UE0)
 
 Розробник - Ярослав Романенко ( yaroslav.romanenko@gmail.com )
