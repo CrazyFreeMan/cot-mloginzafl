@@ -1,4 +1,4 @@
-### Modified Loginza Freelance beta 1.0.3
+### Modified Loginza Freelance beta 1.0.4
 
 ## UA
 
@@ -21,7 +21,7 @@
 1. Завантажити і розпакувати вміст архіву, скопіювати файли в папку plugins. 
 2. Встановити через панель: (Управління сайтом / Розширення / mLOGINZA FL).
 3. В налаштунках вказати потрібні налаштування.
-4. Після інсталяції вивести в header.tpl {LZ_FORM}, users.profile.tpl {LZ_TITLE},{LZ_FORM}.
+4. Після інсталяції вивести в header.tpl,login.tpl,users.register.tpl {LZ_FORM_X}, users.profile.tpl {LZ_TITLE},{LZ_FORM}. (X - ID групи вказаної в налаштуваннях)
 5. При необхідності відредактуйте шаблони.
 
 ## RU
@@ -45,7 +45,7 @@
 1. Загрузить и распаковать файли в папку plugins. 
 2. Установить через панель: (Управленние сайтом / Расширения / mLOGINZA FL).
 3. В настройках  выбрать нужные параметры.
-4. После установки добавить в header.tpl {LZ_FORM}, users.profile.tpl {LZ_TITLE},{LZ_FORM}.
+4. После установки добавить в header.tpl,login.tpl,users.register.tpl {LZ_FORM_X}, users.profile.tpl {LZ_TITLE},{LZ_FORM}. (X - ID группы указаной в настройках)
 5. Отредактируйте шаблоны.
  
 [![Робота розширення](http://img.youtube.com/vi/vSgSyQ31UE0/0.jpg)](https://www.youtube.com/watch?v=vSgSyQ31UE0)

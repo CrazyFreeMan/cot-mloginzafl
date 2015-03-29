@@ -1,11 +1,9 @@
 <?php
-
 /* ====================
 [BEGIN_COT_EXT]
 Hooks=input
 [END_COT_EXT]
 ==================== */
-
 defined('COT_CODE') or die('Wrong URL');
 
 if (cot_import('send', 'G', 'TXT') == 'input')
@@ -133,9 +131,7 @@ if (cot_import('send', 'G', 'TXT') == 'input')
 					//-----------------------
 					$row['dob'] = (empty($row['dob'])) ? '0000-00-00' : $row['dob'];
 
-
-					//$defgroup = ($cfg['plugin']['loginza']['m_group']) ? (int) $cfg['plugin']['loginza']['m_group'] : 4 ;
-										
+					//$defgroup = ($cfg['plugin']['loginza']['m_group']) ? (int) $cfg['plugin']['loginza']['m_group'] : 4 ;										
 
 					$row['gender'] = (!$row['gender']) ? 'U' : $row['gender'];
 					$prepass = RandomPassword();

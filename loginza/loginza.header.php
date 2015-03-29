@@ -1,12 +1,10 @@
 <?php
-
 /* ====================
 [BEGIN_COT_EXT]
 Hooks=header.body
-Tags=header.tpl:{LZ_FORM}
+Tags=header.tpl:{LZ_FORM_X}
 [END_COT_EXT]
 ==================== */
-
 defined('COT_CODE') or die('Wrong URL');
 
 if ($usr['id'] < 1)
@@ -37,7 +35,6 @@ if ($usr['id'] < 1)
 		}
 	}
 	unset($lzget['x']);
-
 	$lzget['x'] = $sys['xk'];
 	$lzget['send'] = 'input';
 	
@@ -63,16 +60,12 @@ if ($usr['id'] < 1)
 				$lz->assign(array(
 					"TOKEN_URL_SHORT" => $fullname . $addproviders
 					));
-			}
-			
-			$lz->parse("MAIN.ROW_LOG");
+			}			
+			$lz->parse("MAIN.ROW_LOG");	
+			$lz->parse("MAIN");	
+			$loginza[$value] = $lz->text("MAIN");
+			$t->assign(array(
+					'LZ_FORM_'.$value => $loginza[$value]
+				));		
 	}
-	/* WTF? $lz->assign(array(
-				"TOKEN_URL_IFRAME" => '<script src="http://loginza.ru/js/widget.js" type="text/javascript"></script><iframe src="https://loginza.ru/api/widget?overlay=loginza&token_url='.$fullname.'" style="width:630px; height:200px;" scrolling="no" frameborder="no"></iframe>'
-				));*/
-	$lz->parse("MAIN");
-	$lz_exit = $lz->text("MAIN");	
-	$t->assign(array(
-		'LZ_FORM' => $lz_exit
-	));
 }

@@ -4,7 +4,7 @@
 Code=loginza
 Name=mLOGINZA FL
 Description=Authorization and registration for FL site through loginza.ru all-in-one service
-Version=1.0.3
+Version=1.0.4
 Date=01-08-2014
 Author=Dr2005alex, CrazyFreeMan
 Copyright=&copy; 2014 Dr2005alex http://mycotonti.ru, CrazyFreeMan (simple-website.in.ua)
