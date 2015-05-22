@@ -73,6 +73,18 @@ function lz_autologin($row)
 		$db->query("DELETE FROM $db_online WHERE online_userid='-1' AND online_ip='" . $usr['ip'] . "' LIMIT 1");
 	}
         $_SESSION['loginza']['is_auth'] = 1;
+         /* === Hook === */
+         foreach (cot_getextplugins('loginza.auth.check.done') as $pl)
+         {
+         	include $pl;
+         }
+         /* ===== */
+        /* === Hook === */
+        foreach (cot_getextplugins('users.auth.check.done') as $pl)
+        {
+        	include $pl;
+        }
+        /* ===== */
 	cot_uriredir_apply($cfg['redirbkonlogin']);
 	cot_uriredir_redirect(empty($redirect) ? cot_url('index') : base64_decode($redirect));
 	exit;

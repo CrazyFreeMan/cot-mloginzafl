@@ -1,4 +1,4 @@
-### Modified Loginza Freelance beta 1.0.4
+### Modified Loginza Freelance beta 1.0.5
 
 ## UA
 
